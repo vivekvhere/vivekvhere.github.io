@@ -762,11 +762,11 @@ p.get-in-touch_contact i{
 /*--------------------------------------------------------*/
 @media (min-width:320px) and (max-width:767px){
     .main-banner-caption h2 {
-    font-size: 40px;
+    font-size: 48px;
 }
     .main-banner-caption {
-    right: 10%;
-    left: 10%;
+    right: 2%;
+    left: 2%;
 }
 .about-text h2{
         padding: 5% 0 0 0;
@@ -778,7 +778,9 @@ p.download-cv {
     padding: 8% 0 25%;
     }
     .portfolio-sec-main .simplefilter li {
-    margin: 0 10px 10px 0px;
+    margin: 0 5px 10px 0px;
+    font-size: 10px;
+    font-weight: 600;
 }
 .portfolio-sec-main {
     padding: 8% 0 25%;
@@ -792,7 +794,7 @@ p.download-cv {
     text-align: center;
 }
 .main-banner-image {
-    right: -47%;
+    right: 0;
         top: 16%;
     }
     .navbar-light .navbar-brand{
@@ -803,6 +805,12 @@ p.download-cv {
     }
     #scroll-dwn-btn {
     bottom: 30px;
+}
+.main-banner-image img {
+    width: 50%;
+    position: relative;
+    right: 0px;
+    left: 25%;
 }
 }
 
