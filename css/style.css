@@ -812,6 +812,10 @@ p.download-cv {
     right: 0px;
     left: 25%;
 }
+    .main-banner-wrap .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 12px;
+}
 }
 
 @media (min-width:768px) and (max-width:1024px){
