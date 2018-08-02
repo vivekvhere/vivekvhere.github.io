@@ -1,0 +1,824 @@
+
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100i,200,300,400,500,600,700,800,900');
+/*google fonts---*/
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+    outline : none !important;
+}
+
+a:active, a:hover {
+    outline : 0 none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin                 : 0px;
+    padding                : 0px;
+
+    -webkit-font-smoothing : antialiased;
+}
+
+h1{
+    font-size      : 30px;
+    font-weight    : 400;
+    text-transform : uppercase;
+}
+
+h2{
+}
+
+h3{
+}
+
+ul {
+    margin     : 0;
+    padding    : 0;
+
+    list-style : none;
+}
+
+ol {
+    padding             : 0px;
+    list-style-position : inside;
+}
+
+ol, li {
+    position      : relative;
+
+    margin-bottom : 0px;
+
+    list-style    : none;
+}
+
+a {
+    text-decoration : none;
+}
+
+a:hover {
+    text-decoration    : none;
+
+    -webkit-transition : .5s;
+    -moz-transition    : .5s;
+    -ms-transition     : .5s;
+    -o-transition      : .5s;
+    /* ...and now for the proper property */
+    transition         : .5s;
+}
+
+:hover {
+    text-decoration    : none;
+
+    -webkit-transition : .5s;
+    -moz-transition    : .5s;
+    -ms-transition     : .5s;
+    -o-transition      : .5s;
+    /* ...and now for the proper property */
+    transition         : .5s;
+}
+
+p,li{
+    font-family : 'Poppins', sans-serif;
+}
+
+.nopadding{
+    padding : 0;
+}
+
+.nopadding-right{
+    padding : 0 0 0 15px;
+}
+
+.nopadding-left{
+    padding : 0 15px 0 0px;
+}
+
+.blue-clr{
+}
+
+.brown-clr{
+    color : #f36371;
+}
+
+/*-----------------------------MAIN CSS----------------------------------------*/
+.main-banner-wrap{
+    position : relative;
+    background: #00c6ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height   : 100vh;
+}
+
+.main-banner-wrap a.navbar-brand img{
+    width : 50%;
+}
+
+.main-banner-overlay{
+    position              : absolute;
+    top                   : 0;
+    right                 : 0;
+    bottom                : 0;
+    left                  : 0;
+
+    height                : 100vh;
+    width                 : 100%;
+
+    background            : url('../images/banner-bg.png') no-repeat center;
+    background-attachment : fixed;
+    background-size       : cover;
+}
+
+.main-banner-wrap .navbar-light .navbar-nav .nav-link{
+    color : #fff;
+}
+
+.main-banner-caption{
+    position   : absolute;
+    top        : 62%;
+    right      : 20%;
+    left       : 20%;
+
+    color      : #fff;
+    text-align : center;
+}
+
+.main-banner-caption h2{
+    margin-top     : -90px;
+
+    font-size      : 90px;
+    font-weight    : bold;
+    color          : #fff;
+    letter-spacing : -1px;
+}
+
+.main-banner-caption p{
+    opacity     : 0.7;
+    font-size   : 17px;
+    color       : #fff;
+    line-height : 33px;
+}
+
+.main-banner-caption li{
+    display : inline-block;
+    padding : 0 0 0 0;
+}
+
+.main-banner-caption .social-links li a{
+    padding : 0 0 0 8px;
+    color   : #fff;
+}
+
+.main-banner-image{
+    position      : absolute;
+    right         : 20%;
+
+    border-radius : 50%;
+}
+
+.main-banner-image img{
+    width         : 40%;
+
+    /* outline: 2px solid #000; */
+    border        : 4px solid #fff;
+    /* margin: 0 auto; */
+    border-radius : 50%;
+}
+
+.left-svg {
+    position   : absolute;
+    bottom     : 0;
+    left       : 0;
+    z-index    : 99;
+
+    background : none;
+}
+
+.right-svg {
+    position   : absolute;
+    right      : 0 !important;
+    bottom     : 0;
+    left       : auto;
+    z-index    : 99;
+
+    background : none;
+}
+
+.left-svg path, .right-svg path {
+    fill         : #fff;
+    stroke       : #fff;
+    stroke-width : 4;
+}
+
+/*----------------------BANNER SCROLL MOUSE------------------------------------*/
+#scroll-dwn-btn{
+    position : absolute;
+    right    : 0;
+    bottom   : 6px;
+    left     : 50%;
+    z-index  : 999;
+}
+
+#scroll-dwn-btn a {
+    padding-top : 60px;
+}
+
+#scroll-dwn-btn a span {
+    position      : absolute;
+    right         : 0;
+    bottom        : 0;
+    left          : 0;
+    box-sizing    : border-box;
+
+    height        : 50px;
+    width         : 30px;
+    margin-left   : -15px;
+
+    border        : 2px solid #fff;
+    border-radius : 50px;
+}
+
+#scroll-dwn-btn a span::before {
+    content           : '';
+
+    position          : absolute;
+    top               : 10px;
+    left              : 50%;
+    box-sizing        : border-box;
+
+    height            : 6px;
+    width             : 6px;
+    margin-left       : -3px;
+
+    background-color  : #fff;
+    border-radius     : 100%;
+
+    -webkit-animation : sdb10 2s infinite;
+    animation         : sdb10 2s infinite;
+}
+
+@-webkit-keyframes sdb10 {
+    0% {
+        opacity           : 0;
+        -webkit-transform : translate(0, 0);
+    }
+
+    40% {
+        opacity : 1;
+    }
+
+    100% {
+        opacity           : 0;
+        -webkit-transform : translate(0, 10px);
+    }
+    /*    100% {
+            opacity: 0;
+        }*/
+}
+
+@keyframes sdb10 {
+    0% {
+        opacity           : 0;
+        -webkit-transform : translate(0, 0);
+    }
+
+    40% {
+        opacity : 1;
+    }
+
+    100% {
+        opacity           : 0;
+        -webkit-transform : translate(0, 10px);
+    }
+}
+.main-banner-wrap .navbar-light .navbar-nav .nav-link:hover{
+    color: #000;
+}
+/*--------------------ABOUT----------------------------------------------------*/
+.about-section-main{
+    position : relative;
+    padding  : 8% 0 12%;
+}
+
+.about-section-main .left-svg path, .about-section-main .right-svg path {
+    stroke : #f2f2f2;
+    fill   : #f2f2f2;
+}
+
+#first-section{
+
+}
+
+.about-text h2{
+    margin-bottom  : 10px;
+
+    font-size      : 12px;
+    font-weight    : 600;
+    color          : #111111;
+    letter-spacing : 2px;
+    text-transform : uppercase;
+}
+
+.about-text h2 span{
+    display     : block;
+
+    font-size   : 36px;
+    font-weight : 700;
+    color       : #111111;
+}
+
+.about-text p{
+    font-size   : 15px;
+    color       : #748182;
+    line-height : 28px;
+}
+
+h2.heading-main{
+    position    : relative;
+    display     : inline-block;
+
+    font-family : 'BebasNeueRegular';
+    font-size   : 40px;
+    font-style  : normal;
+    font-weight : normal;
+}
+
+span.heading-bg {
+    position       : absolute;
+    top            : 0;
+    left           : 50%;
+    z-index        : -1;
+
+    margin-top     : -35px;
+    margin-left    : -26px;
+
+    font-family    : 'BebasNeueRegular';
+    font-size      : 82px;
+    font-style     : normal;
+    font-weight    : normal;
+    color          : #dfdfdf;
+    letter-spacing : -2px;
+}
+
+p.download-cv{
+    padding : 5% 0 0 0;
+}
+
+p.download-cv a{
+    padding        : 10px 20px;
+
+    background     : #00c6ff;
+    background     : -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background     : linear-gradient(to right, #0072ff, #00c6ff);
+    color          : #fff;
+    text-transform : capitalize;
+    border-radius  : 30px;
+}
+
+p.download-cv a:hover{
+    background : #00c6ff;
+    background : -webkit-linear-gradient(to right,#00c6ff, #0072ff);
+    background : linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/*---------------------------WHAY I DO---------------------------------------------*/
+.what-i-do-main{
+    position   : relative;
+
+    padding    : 8% 0 12%;
+
+    background : #f2f2f2;
+}
+
+.what-i-do-main_caption{
+}
+
+.what-i-do-main_caption img{
+    position : relative;
+    width    : 100%;
+}
+
+.what-i-do-main_caption h2{
+    position       : absolute;
+    top            : 30%;
+    right          : 10%;
+
+    font-size      : 36px;
+    color          : #fff;
+    letter-spacing : 1px;
+    text-align     : center;
+    text-transform : uppercase;
+}
+
+.what-i-do-main_caption h2 span{
+    display        : block;
+
+    font-size      : 50px;
+    font-weight    : 700;
+    text-transform : uppercase;
+}
+.what-i-do-main_content-each:hover h2:before{
+    width: 20%;
+    -webkit-transition : .5s;
+    -moz-transition    : .5s;
+    -ms-transition     : .5s;
+    -o-transition      : .5s;
+    /* ...and now for the proper property */
+    transition         : .5s;
+}
+.what-i-do-main_content{
+    padding : 0 0px 0 20px;
+}
+
+.what-i-do-main_content-each{
+    padding : 25px 0 0px;
+}
+
+.what-i-do-main_content-each img{
+    width  : 16%;
+    margin : 0 0 8px;
+}
+
+.what-i-do-main_content-each h2{
+    position       : relative;
+
+    margin         : 0 0 16px;
+
+    /* display: initial; */
+    opacity        : 0.9;
+    font-size      : 16px;
+    text-transform : uppercase;
+}
+
+.what-i-do-main_content-each h2:before{
+    content    : '';
+
+    position   : absolute;
+    bottom     : -8px;
+
+    height     : 2px;
+    width      : 10%;
+
+    background : #0072ff;
+    -webkit-transition : .5s;
+    -moz-transition    : .5s;
+    -ms-transition     : .5s;
+    -o-transition      : .5s;
+    /* ...and now for the proper property */
+    transition         : .5s;
+}
+
+.what-i-do-main_content-each p{
+    opacity        : .9;
+    font-size      : 14px;
+    font-weight    : 300;
+    color          : #3f3f3f;
+    letter-spacing : .1px;
+}
+
+/*-----------------------------PORTFOLIO SECTION---------------------------------*/
+.portfolio-sec-main{
+    position : relative;
+    padding  : 8% 0 12%;
+}
+
+h2.portfolio-head{
+    margin         : 0 0 3%;
+    margin-bottom  : 10px;
+
+    font-size      : 12px;
+    font-weight    : 600;
+    color          : #111111;
+    letter-spacing : 2px;
+    text-align     : center;
+    text-transform : uppercase;
+}
+
+h2.portfolio-head span{
+    display     : block;
+
+    font-size   : 36px;
+    font-weight : 700;
+    color       : #111111;
+}
+
+.portfolio-sec-main .navbar-toggle{
+    display : none;
+}
+
+.portfolio-sec-main .collapse:not(.show){
+    display : block;
+}
+
+.portfolio-sec-main img{
+    position : relative;
+}
+
+.portfolio-overlay {
+    position           : absolute;
+    top                : 16px;
+    /* width: 100%; */
+    right              : 16px;
+    bottom             : 16px;
+    left               : 16px;
+
+    opacity            : 0;
+    /* color: #fff; */
+    background         : rgba(0, 0, 0, 0.7411764705882353);
+
+    -webkit-transition : .5s;
+    -moz-transition    : .5s;
+    -ms-transition     : .5s;
+    -o-transition      : .5s;
+    /* ...and now for the proper property */
+    transition         : .5s;
+}
+
+.portfolio-overlay p{
+    padding : 25% 0 0 34%;
+}
+
+.portfolio-overlay p a {
+    padding            : 10px 20px;
+
+    background         : transparent;
+    font-size          : 14px;
+    font-weight        : 600;
+    color              : #fff;
+    letter-spacing     : 1px;
+    text-transform     : capitalize;
+    border             : 2px solid rgb(255, 255, 255);
+    border-radius      : 30px;
+
+    -webkit-transition : .5s;
+    -moz-transition    : .5s;
+    -ms-transition     : .5s;
+    -o-transition      : .5s;
+    transition         : .5s;
+}
+
+.portfolio-overlay p a:hover{
+    background : rgb(255, 255, 255);
+    color      : #333333;
+}
+
+.item-each:hover .portfolio-overlay{
+    opacity            : 1;
+
+    -webkit-transition : .5s;
+    -moz-transition    : .5s;
+    -ms-transition     : .5s;
+    -o-transition      : .5s;
+    /* ...and now for the proper property */
+    transition         : .5s;
+}
+
+.portfolio-sec-main .simplefilter li {
+    margin           : 0 10px 0 0px;
+    padding          : 10px 20px;
+
+    background-color : none;
+    font-size        : 14px;
+    /* padding: 0 0 0 9px; */
+    font-weight      : 500;
+    color            : #848484;
+    border           : 3px solid rgba(105, 105, 105, 0.23);
+}
+
+.portfolio-sec-main .simplefilter li.active {
+    background-color : #444444;
+    /* border: 0; */
+    color            : #ffffff !important;
+    /*border: 3px solid #2196F3;*/
+}
+
+.portfolio-sec-main ul.simplefilter {
+    margin : 0 0 3%;
+}
+
+.item-each {
+    border     : 1px solid #ececec;
+    box-shadow : 1px 1px 13px 2px rgba(0, 0, 0, 0.2);
+}
+
+p.view-all-portfolio{
+    padding    : 3% 0 0 0;
+    text-align : center;
+}
+
+p.view-all-portfolio a{
+    padding        : 10px 30px;
+
+    background     : #00c6ff;
+    background     : -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background     : linear-gradient(to right, #0072ff, #00c6ff);
+    color          : #fff;
+    text-transform : capitalize;
+    border-radius  : 30px;
+}
+
+p.view-all-portfolio a:hover{
+    background : #00c6ff;
+    background : -webkit-linear-gradient(to right,#00c6ff, #0072ff);
+    background : linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+div#pdt-portfolio {
+    text-align : center;
+}
+
+.portfolio-sec-main .left-svg path, .portfolio-sec-main .right-svg path {
+    stroke : #f2f2f2;
+    fill   : #f2f2f2;
+}
+
+/*----------------------------CONTACT------------------------------------------*/
+.get-in-touch-main{
+    position   : relative;
+
+    padding    : 8% 0 12%;
+
+    background : #f2f2f2;
+    text-align : center;
+}
+
+.get-in-touch_quote{
+    padding : 0 0 30px;
+    color   : #949494;
+}
+
+p.get-in-touch_contact{
+    padding : 0 0 10px;
+    color   : #505050;
+}
+p.get-in-touch_contact a{
+    color: #505050;
+}
+.get-in-touch-main .social-links{
+    padding : 10px 0 0;
+}
+
+.get-in-touch-main .social-links li{
+    display : inline-block;
+    padding : 0 0 0 10px;
+}
+
+.get-in-touch-main i{
+    color : #0072ff;
+}
+
+p.get-in-touch_contact i{
+    padding : 0 3px 0 0px;
+    color   : #505050;
+}
+
+.get-in-touch-main .left-svg path,.get-in-touch-main .right-svg path {
+    fill         : #272727;
+    stroke       : #272727;
+    stroke-width : 4;
+}
+
+/*--------------------------------FOOTER---------------------------------------*/
+.footer-main{
+    padding    : 2% 0;
+
+    background : #272727;
+    text-align : center;
+}
+
+.footer-main .social-links li{
+    display : inline-block;
+    padding : 0 0 0 10px;
+}
+
+.footer-main ul.social-links {
+    padding : 0 0 10px;
+}
+
+.footer-main .social-links li i{
+    color : #fff
+}
+
+.footer-main p{
+    font-size : 14px;
+    color     : #fff;
+}
+
+/*---------------------------scroll to top-------------------------------------------------*/
+#return-to-top {
+    position              : fixed;
+    display               : block;
+    display               : none;
+    right                 : 20px;
+    bottom                : 20px;
+    z-index               : 999;
+
+    height                : 50px;
+    width                 : 50px;
+
+    background            : rgb(0, 0, 0);
+    background            : rgba(0, 0, 0, 0.7);
+    text-decoration       : none;
+    border-radius         : 35px;
+
+    -webkit-transition    : all 0.3s linear;
+    -moz-transition       : all 0.3s ease;
+    -ms-transition        : all 0.3s ease;
+    -o-transition         : all 0.3s ease;
+    transition            : all 0.3s ease;
+
+    -webkit-border-radius : 35px;
+    -moz-border-radius    : 35px;
+}
+
+#return-to-top i {
+    position           : relative;
+    top                : 13px;
+    left               : 16px;
+
+    margin             : 0;
+
+    font-size          : 19px;
+    color              : #fff;
+
+    -webkit-transition : all 0.3s ease;
+    -moz-transition    : all 0.3s ease;
+    -ms-transition     : all 0.3s ease;
+    -o-transition      : all 0.3s ease;
+    transition         : all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background : rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover i {
+    top   : 5px;
+    color : #fff;
+}
+/*.filtr-container {
+    height:100% !important;
+}*/
+/*-----------------------------------------------------------------------------*/
+/*--------------------------------------------------------*/
+@media (min-width:320px) and (max-width:767px){
+    .main-banner-caption h2 {
+        font-size: 48px;
+    }
+    .main-banner-caption {
+        right: 2%;
+        left: 2%;
+    }
+    .about-text h2{
+        padding: 5% 0 0 0;
+    }
+    p.download-cv {
+        padding: 5% 0 15% 0;
+    }
+    .what-i-do-main {
+        padding: 8% 0 25%;
+    }
+    .portfolio-sec-main .simplefilter li {
+        margin: 0 5px 10px 0px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .portfolio-sec-main {
+        padding: 8% 0 25%;
+    }
+    .what-i-do-main_caption h2 {
+        top: 45%;
+        right: 7%;
+        font-size: 28px;
+    }
+    .about-text {
+        text-align: center;
+    }
+    .main-banner-image {
+        right: 0;
+        top: 16%;
+    }
+    .navbar-light .navbar-brand{
+        width: 0;
+    }
+    .navbar-expand{
+        text-align: center;
+    }
+    #scroll-dwn-btn {
+        bottom: 30px;
+    }
+    .main-banner-image img {
+        width: 50%;
+        position: relative;
+        right: 0px;
+        left: 25%;
+    }
+    .main-banner-wrap .navbar-light .navbar-nav .nav-link {
+        color: #fff;
+        font-size: 12px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+}
