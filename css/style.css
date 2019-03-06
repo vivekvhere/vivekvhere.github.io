@@ -176,7 +176,11 @@ p,li{
     text-align: center;
     width: 30%;
 }
-
+.main-banner-image img{
+    width:40%;
+    border-radius:50%;
+    border:5px solid #fff;
+}
 .left-svg {
     position   : absolute;
     bottom     : 0;
