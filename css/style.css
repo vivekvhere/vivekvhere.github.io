@@ -792,8 +792,7 @@ p.get-in-touch_contact i{
         text-align: center;
     }
     .main-banner-image {
-        right: 0;
-        top: 16%;
+        width: 70%;
     }
     .navbar-light .navbar-brand{
         width: 0;
@@ -806,9 +805,7 @@ p.get-in-touch_contact i{
     }
     .main-banner-image img {
         width: 50%;
-        position: relative;
-        right: 0px;
-        left: 25%;
+        position: initial;
     }
     .main-banner-wrap .navbar-light .navbar-nav .nav-link {
         color: #fff;
