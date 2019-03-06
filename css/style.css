@@ -171,10 +171,11 @@ p,li{
 }
 
 .main-banner-image{
-    position      : initial;
+    position: initial;
     margin: 0 auto;
     text-align: center;
     width: 30%;
+    margin-top: 125px;
 }
 .main-banner-image img{
     width:40%;
